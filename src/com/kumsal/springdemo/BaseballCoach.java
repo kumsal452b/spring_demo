@@ -12,7 +12,7 @@ public class BaseballCoach implements Coach{
 
 	@Override
 	public String getDailyFortune() {
-		return fortuneService.getFortune();
+		return "Basball: "+fortuneService.getFortune();
 	}
 
 }
