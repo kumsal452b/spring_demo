@@ -1,6 +1,10 @@
 package com.kumsal.springdemo;
 
 public class BaseballCoach implements Coach{
+	private FortuneService fortuneService;
+	 public BaseballCoach(FortuneService nesne){
+		this.fortuneService=nesne;
+	}
 	@Override
 	public String getDailyWorkout(){
 		return "Spend 30 minute on batting practice";
@@ -9,7 +13,7 @@ public class BaseballCoach implements Coach{
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return null;
+		return fortuneService.getFortune();
 	}
 
 }
