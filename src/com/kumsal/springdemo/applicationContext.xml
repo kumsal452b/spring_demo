@@ -18,7 +18,7 @@
     </bean>
     <bean id="myCricketCoach"
     		class="com.kumsal.springdemo.CricketCoach">
-    		<property name="fortuneService" ref="myFortune"></property>
+    		<property name="FortuneService" ref="myFortune"></property>
     </bean>
     
 </beans>
