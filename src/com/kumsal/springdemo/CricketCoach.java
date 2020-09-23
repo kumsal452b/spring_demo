@@ -13,6 +13,7 @@ public class CricketCoach implements Coach{
 	}
 	
 	public CricketCoach(FortuneService fortuneService) {
+		System.out.println("CricketCoach: inside setter method -setFortunService");
 		this.fortuneService = fortuneService;
 	}
 
