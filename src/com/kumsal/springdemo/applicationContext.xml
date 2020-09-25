@@ -18,6 +18,9 @@
     </bean>
     <bean id="myCricketCoach" class="com.kumsal.springdemo.CricketCoach">
     		<property name="fortuneService" ref="myFortune"></property>
+    		
+    		<property name="email" value="delta12sago@gmail.com"></property>
+    		<property name="team" value="Sunrises"></property>
     </bean>
     
 </beans>
