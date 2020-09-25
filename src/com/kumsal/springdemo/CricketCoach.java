@@ -3,6 +3,8 @@ package com.kumsal.springdemo;
 public class CricketCoach implements Coach{
 
 	FortuneService fortuneService;
+	private String email;
+	private String team;
 	
 	public void setFortuneService(FortuneService fortuneService) {
 		System.out.println("CricketCoach: inside setter method -setFortunService");
@@ -29,5 +31,24 @@ public class CricketCoach implements Coach{
 		
 		return fortuneService.getFortune();
 	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		System.out.println("CricketCoach: inside setter method -setEmailAdress");
+		this.email = email;
+	}
+
+	public String getTeam() {
+		return team;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("CricketCoach: inside setter method -setTeam");
+		this.team = team;
+	}
+	
 	
 }
