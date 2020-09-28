@@ -9,6 +9,7 @@ public class BeanLifeCycleDemoApp {
 		
 		
 		System.out.println(theCoach.getDailyWorkout());
+		context.close();
 	}
 
 }
