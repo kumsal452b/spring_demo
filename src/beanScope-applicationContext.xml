@@ -15,8 +15,7 @@
     </bean>
     
     <bean id="myCoach" class="com.kumsal.springdemo.TrackCoach" 
-    init-method="doMyStartupSruff"
-    destroy-method="doMyCleanupStuffYoyo">
+   scope="prototype">
     	<constructor-arg ref="myFortune"></constructor-arg>
     </bean>
 
